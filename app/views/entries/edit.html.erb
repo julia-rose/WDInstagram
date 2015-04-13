@@ -1,0 +1,9 @@
+<%= form_for @entry do |f| %>
+	<%= f.label :author %>
+	<%= f.text_field :author %>
+	<%= f.label :photo_url %>
+	<%= f.text_field :photo_url %>
+	<%= f.label :caption %>
+	<%= f.text_field :caption%>
+	<%= f.submit "Update Entry", id: "submit" %>
+<% end %>

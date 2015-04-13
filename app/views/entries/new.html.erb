@@ -1,0 +1,15 @@
+<form method="post" action="/entries">
+<input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+
+	<label for="author">Author:</label>
+	<input type="text" name="entry[author]" placeholder="Enter author name">
+
+	<label for="photo_url">Photo URL:</label>
+	<input type="text" name="entry[photo_url]" placeholder="Enter photo URL">
+
+	<label for="caption">Caption:</label>
+	<input type="text" name="entry[caption]" placeholder="Enter caption">
+
+	<button  type="submit">Add Entry</button>
+
+</form>
